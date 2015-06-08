@@ -1,4 +1,4 @@
-/*
+﻿/*
  * typehead.js-bootstrap3.less
  * @version 0.2.3
  * https://github.com/hyspace/typeahead.js-bootstrap3.less
@@ -35,6 +35,10 @@
   }
 
   //border
+  .input-group .twitter-typeahead:not(:first-child):not(:last-child) &{
+    border-radius: 0;
+    width: 100%;
+  }
   .input-group .twitter-typeahead:first-child &{
     .border-left-radius(@border-radius-base);
     width: 100%;
@@ -42,7 +46,7 @@
   .input-group .twitter-typeahead:last-child &{
     .border-right-radius(@border-radius-base);
     width: 100%;
-  }
+  } 
 
   //sizing - small:size and border
   .input-group.input-group-sm .twitter-typeahead &{
